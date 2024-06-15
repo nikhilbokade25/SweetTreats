@@ -1,0 +1,128 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    flex: 1;
+}
+
+.nav {
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    flex-grow: 5;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav li {
+    padding: 10px 15px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+}
+
+.nav li:hover {
+    background-color: rebeccapurple;
+}
+
+.cart-icon {
+    flex: 1;
+    text-align: right;
+}
+
+.cart-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.nav_btn {
+    display: none;
+    opacity: 0;
+    background: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+    margin-right: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_btn_menu{
+    margin-bottom: 5px;
+}
+
+@media (max-width: 800px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100vw);
+        background-color: white;
+        z-index: 1;
+    }
+
+    .nav_btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        font-weight: bold;
+    }
+
+    /* .header {
+        justify-content: space-between;
+    } */
+
+    .menu-cart-container {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between the button and cart icon */
+    }
+
+    .nav_btn_menu {
+        margin-right: 0;
+    }
+
+    .responsive_nav{
+        transition: 0.5s;
+        transform: none;
+    }
+
+    .nav_btn_close{
+        position: absolute;
+        top: 12px;
+        right: 0px;
+    }
+
+    .nav a{
+        margin-top: 40px;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        
+    }
+}
