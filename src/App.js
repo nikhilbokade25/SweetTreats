@@ -6,6 +6,7 @@ import WhatsNewPage from './Components/WhatsNewPage';
 import WhatWeProducePage from './Components/WhatWeProducePage';
 import AboutUs from './Components/AboutUs';
 
+
 function App() {
   return (
     <div className="App">

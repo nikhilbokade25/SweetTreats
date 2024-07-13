@@ -28,13 +28,76 @@
 }
 
 
-
 .whatweproduce_content h4 {
     margin: 10px 0 5px;
 }
 
 .whatweproduce_content p {
     margin: 5px 0;
+}
+
+.whatweproduce_content button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.whatweproduce_content button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s, height 0.3s;
+}
+
+.btn_cookies:hover::after {
+    background-image: url('../assets/cookies_icon.png');
+    width: 24px; 
+    height: 24px;
+    opacity: 1;
+}
+
+.btn_donuts:hover::after {
+    background-image: url('../assets/donut_icon.png');
+    width: 24px; 
+    height: 24px;
+    opacity: 1;
+}
+
+.btn_cupcakes:hover::after {
+    background-image: url('../assets/cupcake_icon.png');
+    width: 24px; 
+    height: 24px;
+    opacity: 1;
+}
+
+.btn_macaroons:hover::after {
+    background-image: url('../assets/macaroon_icon.png');
+    width: 24px; 
+    height: 24px;
+    opacity: 1;
+}
+
+
+
+
+
+.whatweproduce_content button:hover {
+    color: transparent;
 }
 
 /* Media query for mobile devices */
