@@ -19,25 +19,25 @@ export default function WhatWeProducePage(){
                     <img src={cookieImg} alt="Cookies" />
                     <h4>Cookies</h4>
                     <p>Delicious homemade cookies.</p>
-                    <button className='btn_cookies'>COOKIES</button>
+                    <button className='btn_cookies'>Cookies</button>
                 </div>
                 <div className="whatweproduce_content">
                     <img src={donutsImg} alt="Donuts" className='donuts_img'/>
-                    <h4>Apple Pie</h4>
-                    <p>Classic apple pie with a flaky crust.</p>
-                    <button className='btn_donuts'>DONUTS</button>
+                    <h4>Donuts</h4>
+                    <p>Classic donut with a flaky crust.</p>
+                    <button className='btn_donuts'>Donuts</button>
                 </div>
                 <div className="whatweproduce_content">
                     <img src={cupcakeImg} alt="Cupcakes" />
                     <h4>Cupcakes</h4>
                     <p>Sweet and delightful cupcakes.</p>
-                    <button className='btn_cupcakes'>CUPCAKES</button>
+                    <button className='btn_cupcakes'>Cupcakes</button>
                 </div>
                 <div className="whatweproduce_content">
                     <img src={macaroonImg} alt="Macaroons" />
                     <h4>Macaroons</h4>
                     <p>Colorful and tasty macaroons.</p>
-                    <button className='btn_macaroons'>MACAROONS</button>
+                    <button className='btn_macaroons'>Macaroons</button>
                 </div>
             </div>
 

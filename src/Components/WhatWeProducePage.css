@@ -14,7 +14,7 @@
 .whatweproduce_content {
     width: 200px;
     background-color: #f0e68c;
-    padding: 10px;
+    padding: 20px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -37,7 +37,7 @@
 }
 
 .whatweproduce_content button {
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: none;
     cursor: pointer;
     background-color: #f4f4f4;
@@ -47,6 +47,8 @@
     overflow: hidden;
     z-index: 1;
     transition: color 0.3s;
+    margin-top: 20px;
+    border-radius: 20px;
 }
 
 .whatweproduce_content button::after {
@@ -66,29 +68,29 @@
 
 .btn_cookies:hover::after {
     background-image: url('../assets/cookies_icon.png');
-    width: 24px; 
-    height: 24px;
+    width: 28px; 
+    height: 28px;
     opacity: 1;
 }
 
 .btn_donuts:hover::after {
     background-image: url('../assets/donut_icon.png');
-    width: 24px; 
-    height: 24px;
+    width: 28px; 
+    height: 28px;
     opacity: 1;
 }
 
 .btn_cupcakes:hover::after {
     background-image: url('../assets/cupcake_icon.png');
-    width: 24px; 
-    height: 24px;
+    width: 28px; 
+    height: 28px;
     opacity: 1;
 }
 
 .btn_macaroons:hover::after {
     background-image: url('../assets/macaroon_icon.png');
-    width: 24px; 
-    height: 24px;
+    width: 28px; 
+    height: 28px;
     opacity: 1;
 }
 
