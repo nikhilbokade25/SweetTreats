@@ -1,40 +1,18 @@
 import "./AboutUs.css";
 import donutAboutImg from '../assets/donut_about.png';
-import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import React from 'react';
+import donutIcon from '../assets/donut_icon.png';
+import cookieIcon from '../assets/cookies_icon.png';
+import macaroonIcon from '../assets/macaroon_icon.png';
+import cupcakeIcon from '../assets/cupcake_icon.png';
+import cakeIcon from '../assets/cake_icon.png';
+import pastryIcon from '../assets/pastry_icon.png';
+import pancakeIcon from '../assets/pancake_icon.png';
+import Marquee from "react-fast-marquee";
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 export default function AboutUs() {
-
-    useEffect(() => {
-        const isMobile = window.matchMedia("(max-width: 768px)").matches;
-
-        let animation;
-        
-        if (!isMobile) {
-            animation = gsap.to('.aboutus_image', {
-                scrollTrigger: {
-                    trigger: '.aboutus_main',
-                    start: 'top top', // when the top of the trigger hits the top of the viewport
-                    end: 'bottom bottom', // when the bottom of the trigger hits the bottom of the viewport
-                    scrub: true, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-                },
-                y: 265,
-                ease: 'none'
-            });
-        }
-
-        // Cleanup function
-        return () => {
-            if (animation) {
-                animation.scrollTrigger.kill();
-                animation.kill();
-            }
-        };
-    }, []);
-
     return (
         <div className="aboutus_container">
             <h2>About Us</h2>
@@ -48,6 +26,38 @@ export default function AboutUs() {
                         <br/><br/>Thank you for choosing Sweet Treats. We are honored to be a part of your daily life and look forward to serving you the finest baked goods for many more years to come. Our commitment to excellence and passion for baking is what drives us, and we can't wait to share our love for sweets with you. Come visit us and experience the magic of Sweet Treats.
                     </p>
                 </div>
+            </div>
+
+            <div className="sliding_container"> 
+                <Marquee velocity="10">
+                    <div className="sliding_image">
+                        <img src={cookieIcon} />
+                    </div>
+
+                    <div className="sliding_image">
+                        <img src={donutIcon} />
+                    </div>
+
+                    <div className="sliding_image">
+                        <img src={cupcakeIcon} />
+                    </div>
+
+                    <div className="sliding_image">
+                        <img src={pastryIcon} />
+                    </div>
+
+                    <div className="sliding_image">
+                        <img src={macaroonIcon} />
+                    </div>
+
+                    <div className="sliding_image">
+                        <img src={cakeIcon} />
+                    </div>
+
+                    <div className="sliding_image">
+                        <img src={pancakeIcon} />
+                    </div>
+                </Marquee>
             </div>
         </div>
     );

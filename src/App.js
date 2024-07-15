@@ -5,6 +5,7 @@ import Hero from './Components/Hero';
 import WhatsNewPage from './Components/WhatsNewPage';
 import WhatWeProducePage from './Components/WhatWeProducePage';
 import AboutUs from './Components/AboutUs';
+import Opportunities from './Components/Opportunities';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <WhatsNewPage />
       <WhatWeProducePage />
       <AboutUs />
+      <Opportunities />
     </div>
   );
 }
