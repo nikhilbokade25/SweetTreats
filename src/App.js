@@ -6,6 +6,7 @@ import WhatsNewPage from './Components/WhatsNewPage';
 import WhatWeProducePage from './Components/WhatWeProducePage';
 import AboutUs from './Components/AboutUs';
 import Opportunities from './Components/Opportunities';
+import Footer1 from './Components/Footer1';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <WhatWeProducePage />
       <AboutUs />
       <Opportunities />
+      <Footer1 />
     </div>
   );
 }
